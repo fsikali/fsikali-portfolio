@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
 
         <h2 className="text-lg text-gray-300">
-          Hi, I'm <span className="font-semibold">Flemming Sikali</span>
+          Hi, I&apos;m <span className="font-semibold">Flemming Sikali</span>
         </h2>
 
         <h1 className="text-4xl md:text-6xl font-bold text-primary">
