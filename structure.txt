@@ -1,0 +1,171 @@
+.
+├── eslint.config.mjs
+├── next.config.ts
+├── next-env.d.ts
+├── node_modules
+│   ├── babel-plugin-react-compiler -> .pnpm/babel-plugin-react-compiler@1.0.0/node_modules/babel-plugin-react-compiler
+│   ├── eslint -> .pnpm/eslint@9.39.4_jiti@2.6.1/node_modules/eslint
+│   ├── eslint-config-next -> .pnpm/eslint-config-next@16.1.6_@typescript-eslint+parser@8.56.1_eslint@9.39.4_jiti@2.6.1__ty_950f40c15288930d304458bb721c4be2/node_modules/eslint-config-next
+│   ├── next -> .pnpm/next@16.1.6_@babel+core@7.29.0_babel-plugin-react-compiler@1.0.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next
+│   ├── react -> .pnpm/react@19.2.3/node_modules/react
+│   ├── react-dom -> .pnpm/react-dom@19.2.3_react@19.2.3/node_modules/react-dom
+│   ├── @tailwindcss
+│   │   └── postcss -> ../.pnpm/@tailwindcss+postcss@4.2.1/node_modules/@tailwindcss/postcss
+│   ├── tailwindcss -> .pnpm/tailwindcss@4.2.1/node_modules/tailwindcss
+│   ├── @types
+│   │   ├── node -> ../.pnpm/@types+node@20.19.37/node_modules/@types/node
+│   │   ├── react -> ../.pnpm/@types+react@19.2.14/node_modules/@types/react
+│   │   └── react-dom -> ../.pnpm/@types+react-dom@19.2.3_@types+react@19.2.14/node_modules/@types/react-dom
+│   └── typescript -> .pnpm/typescript@5.9.3/node_modules/typescript
+├── package.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── postcss.config.mjs
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── images
+│   │   ├── avatar.png
+│   │   ├── blog
+│   │   ├── favicon.ico
+│   │   ├── fonts
+│   │   ├── icons
+│   │   └── projects
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── README.md
+├── src
+│   ├── app
+│   │   ├── api
+│   │   │   ├── analytics
+│   │   │   │   └── route.ts
+│   │   │   ├── contact
+│   │   │   │   └── route.ts
+│   │   │   └── newsletter
+│   │   │       └── route.ts
+│   │   ├── (dashboard)
+│   │   │   ├── blog
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx
+│   │   │   ├── projects
+│   │   │   └── settings
+│   │   ├── error.tsx
+│   │   ├── favicon.ico
+│   │   ├── footer
+│   │   │   └── footer.tsx
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── (legal)
+│   │   │   ├── privacy-policy
+│   │   │   │   └── page.tsx
+│   │   │   └── terms
+│   │   │       └── page.tsx
+│   │   ├── loading.tsx
+│   │   ├── (marketing)
+│   │   │   ├── about
+│   │   │   │   └── page.tsx
+│   │   │   ├── blog
+│   │   │   │   ├── category
+│   │   │   │   │   └── [slug]
+│   │   │   │   │       └── page.tsx
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── [slug]
+│   │   │   │       └── page.tsx
+│   │   │   ├── contact
+│   │   │   │   └── page.tsx
+│   │   │   ├── faq
+│   │   │   │   └── page.tsx
+│   │   │   ├── pricing
+│   │   │   │   └── page.tsx
+│   │   │   ├── projects
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── [slug]
+│   │   │   │       └── page.tsx
+│   │   │   ├── resume
+│   │   │   │   └── page.tsx
+│   │   │   └── testimonials
+│   │   │       └── page.tsx
+│   │   ├── not-found.tsx
+│   │   ├── page.tsx
+│   │   ├── projects
+│   │   │   └── projects.tsx
+│   │   ├── robots.ts
+│   │   ├── sitemap
+│   │   └── sitemap.ts
+│   ├── components
+│   │   ├── layout
+│   │   │   ├── Container.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Navbar.tsx
+│   │   │   └── Sidebar.tsx
+│   │   ├── sections
+│   │   │   ├── About
+│   │   │   │   ├── AboutHero.tsx
+│   │   │   │   ├── Experience.tsx
+│   │   │   │   ├── Skills.tsx
+│   │   │   │   └── Tools.tsx
+│   │   │   ├── Blog
+│   │   │   │   ├── BlogCard.tsx
+│   │   │   │   ├── BlogContent.tsx
+│   │   │   │   └── BlogList.tsx
+│   │   │   ├── Conctact
+│   │   │   │   ├── ContactForm.tsx
+│   │   │   │   └── ContactInfo.tsx
+│   │   │   ├── Home
+│   │   │   │   ├── CTA.tsx
+│   │   │   │   ├── FeaturedProjects.tsx
+│   │   │   │   ├── Hero.tsx
+│   │   │   │   └── SkillsPreview.tsx
+│   │   │   ├── Projects
+│   │   │   │   ├── ProjectCard.tsx
+│   │   │   │   ├── ProjectDetails.tsx
+│   │   │   │   └── ProjectsGrid.tsx
+│   │   │   └── Shared
+│   │   │       ├── PageHeader.tsx
+│   │   │       └── SectionWrapper.tsx
+│   │   ├── seo
+│   │   │   └── MetaTags.tsx
+│   │   └── ui
+│   │       ├── Badge.tsx
+│   │       ├── Button.tsx
+│   │       ├── Card.tsx
+│   │       ├── Input.tsx
+│   │       ├── Modal.tsx
+│   │       └── Spinner.tsx
+│   ├── config
+│   │   └── site.ts
+│   ├── data
+│   │   ├── projects.ts
+│   │   ├── services.ts
+│   │   ├── skills.ts
+│   │   └── testimonials.ts
+│   ├── hooks
+│   │   ├── useDebounce.ts
+│   │   ├── useScroll.ts
+│   │   └── useTheme.ts
+│   ├── lib
+│   │   ├── constants.ts
+│   │   ├── markdown.ts
+│   │   ├── seo.ts
+│   │   └── utils.ts
+│   ├── providers
+│   │   └── ThemeProvider.tsx
+│   ├── services
+│   │   ├── blog.service.ts
+│   │   ├── email.service.ts
+│   │   └── projects.service.ts
+│   ├── store
+│   │   └── useStore.ts
+│   ├── styles
+│   │   └── animations.css
+│   ├── types
+│   │   ├── blog.ts
+│   │   ├── index.ts
+│   │   └── project.ts
+│   └── validators
+│       └── contact.schema.ts
+├── structure.txt
+└── tsconfig.json
+
+72 directories, 97 files
