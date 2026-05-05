@@ -9,12 +9,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "ai-chat-app",
-    title: "AI Chat App",
+    id: "skincare-store",
+    title: "Skincare Store",
     description:
-      "Full-stack AI chat application with streaming responses and API integration.",
-    github: "https://github.com/yourname/ai-chat-app",
-    tech: ["Next.js", "OpenAI", "Tailwind"],
+      "Full-stack ecommerce platform for skincare products with cart and checkout system",
+    github: "https://github.com/fsikali/sela-essence",
+    tech: ["Next.js", "NestJS", "PostgreSQL"],
     featured: true,
   },
   {
@@ -23,39 +23,39 @@ export const projects: Project[] = [
     description:
       "Modern portfolio built with Next.js App Router, SEO optimization, and reusable components.",
     github: "https://github.com/fsikali/fsikali-portfolio",
-    tech: ["Next.js", "TypeScript", "Tailwind"],
+    tech: ["Next.js", "Tailwind", "Framer Motion"],
     featured: true,
   },
   {
     id: "dashboard",
     title: "Analytics Dashboard",
     description:
-      "Admin dashboard with charts, analytics, and real-time data visualization.",
-    github: "https://github.com/yourname/dashboard",
-    tech: ["Next.js", "Prisma", "PostgreSQL"],
+      "Data analytics dashboard visualizing real-time metrics through API-driven backend architecture",
+    github: "https://github.com/fsikali/fstechspace-analytics-dashboard",
+    tech: ["Spring Boot", "Apache Spark", "React"],
   },
   {
-    id: "news-feed",
-    title: "Real-time News Feed",
+    id: "live-news-feed",
+    title: "Live News Feed",
     description:
-      "Live news aggregation system with filtering and trending topics.",
-    github: "https://github.com/yourname/news-feed",
-    tech: ["Next.js", "API Routes", "WebSockets"],
+      "Real-time news feed system delivering continuously updated content with scalable architecture",
+    github: "https://github.com/fsikali/fstechspace-live-news",
+    tech: ["Next.js", "Socket.io", "MongoDB"],
   },
   {
-    id: "task-manager",
-    title: "Task Manager",
+    id: "fstechspace-framework",
+    title: "Mini Framework",
     description:
-      "Productivity app with drag-and-drop tasks and authentication system.",
-    github: "https://github.com/yourname/task-manager",
-    tech: ["Next.js", "Auth", "Database"],
+      "Lightweight backend framework built with Node.js for scalable server architecture design",
+    github: "https://github.com/fsikali/fs-framework",
+    tech: ["Node.js", "HTTP Core", "Middleware"],
   },
   {
-    id: "ai-terminal",
-    title: "AI Terminal Assistant",
+    id: "chat-app",
+    title: "Real-Time Chat App",
     description:
-      "CLI-based AI tutor with voice output and interactive commands.",
-    github: "https://github.com/yourname/ai-terminal",
-    tech: ["Node.js", "Edge-TTS", "CLI"],
+      "Real-time chat system built with Spring Boot WebSocket scalable architecture messaging",
+    github: "https://github.com/fsikali/fstechspace-realtime-chat",
+    tech: ["Spring Boot", "WebSocket", "Redis"],
   },
 ];

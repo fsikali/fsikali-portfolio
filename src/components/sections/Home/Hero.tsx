@@ -11,12 +11,12 @@ export default function Hero() {
         </span>
 
         <h1 className="text-5xl font-bold leading-tight">
-          Building modern <br />
-          web <span className="text-emerald-600">applications</span>
+          Software <br />
+          <span className="text-emerald-600">Engineer</span>
         </h1>
 
         <p className="mt-4 text-gray-600 max-w-md">
-          I create scalable, fast and user-focused digital products using Next.js and modern tools.
+          I build fast, scalable digital products that combine performance, clean design, and seamless user experience
         </p>
 
         <div className="flex gap-4 mt-6">
@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-wrap gap-3 mt-6">
-          {["Next.js", "TypeScript", "Tailwind", "Node.js", "PostgreSQL"].map((tech) => (
+          {["Next.js", "Spring Boot", "PostgreSQL", "TypeScript"].map((tech) => (
             <span key={tech} className="px-3 py-1 bg-white border border-gray-200 rounded-md text-sm text-gray-700">
               {tech}
             </span>

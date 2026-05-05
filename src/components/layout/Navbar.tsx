@@ -12,14 +12,12 @@ export default function Navbar() {
           <div className="w-8 h-8 bg-emerald-100 text-emerald-600 rounded-md flex items-center justify-center font-bold">
             FS
           </div>
-          <span className="text-sm font-medium text-gray-700">
-            Software Engineer
-          </span>
+  
         </div>
 
         {/* CENTER */}
         <nav className="flex justify-center gap-8 text-sm">
-          {["Home", "About", "Projects", "Skills", "Experience", "Contact"].map((item) => (
+          {["Home", "Projects", "Skills", "Experience", "About", "Brand"].map((item) => (
             <Link
               key={item}
               href="#"
