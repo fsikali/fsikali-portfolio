@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* RIGHT (DESKTOP CTA) */}
         <div className="hidden md:flex justify-end">
           <button className="bg-gray-900 text-white px-4 py-2 rounded-md text-sm hover:bg-gray-800 transition">
-            Let’s Talk →
+            Download CV
           </button>
         </div>
 
