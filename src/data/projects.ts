@@ -5,6 +5,7 @@ export type Project = {
   github: string;
   tech: string[];
   featured?: boolean;
+  live?: string;
 };
 
 export const projects: Project[] = [
