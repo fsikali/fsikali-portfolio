@@ -9,67 +9,64 @@ export default function Navbar() {
   const navItems = ["Home", "Projects", "Skills", "Experience", "About", "Brand"];
 
   return (
-    <header className="fixed top-0 w-full bg-white border-b border-gray-200 z-50">
-      <div className="container h-16 flex items-center justify-between">
+    <header className="fixed top-0 left-0 w-full z-50 border-b border-gray-100 bg-white backdrop-blur-xl">
 
-        {/* LEFT */}
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-emerald-100 text-emerald-600 rounded-md flex items-center justify-center font-bold">
+      {/* ALIGNMENT WRAPPER ADDED (ONLY CHANGE) */}
+      <div className="max-w-7xl mx-auto h-20 px-6 lg:px-12 flex items-center justify-between">
+
+        <Link href="/" className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-sm font-semibold text-emerald-600">
             FS
           </div>
-        </div>
+        </Link>
 
-        {/* DESKTOP NAV */}
-        <nav className="hidden md:flex justify-center gap-8 text-sm">
+        <nav className="hidden md:flex items-center gap-10">
           {navItems.map((item) => (
             <Link
               key={item}
               href="#"
-              className="text-gray-600 hover:text-gray-900 transition"
+              className="text-sm font-medium text-gray-500 transition-colors duration-300 hover:text-gray-900"
             >
               {item}
             </Link>
           ))}
         </nav>
 
-        {/* RIGHT (DESKTOP CTA) */}
-        <div className="hidden md:flex justify-end">
-          <button className="bg-gray-900 text-white px-4 py-2 rounded-md text-sm hover:bg-gray-800 transition">
+        <div className="hidden md:flex items-center">
+          <button className="h-11 px-5 rounded-xl bg-black text-white text-sm font-medium transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]">
             Download CV
           </button>
         </div>
 
-        {/* MOBILE MENU BUTTON */}
         <button
-          className="md:hidden flex items-center justify-center w-10 h-10"
+          className="md:hidden w-11 h-11 rounded-xl border border-gray-200 flex items-center justify-center bg-white"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
-          <div className="space-y-1">
-            <span className="block w-5 h-0.5 bg-gray-900"></span>
-            <span className="block w-5 h-0.5 bg-gray-900"></span>
-            <span className="block w-5 h-0.5 bg-gray-900"></span>
+          <div className="space-y-1.5">
+            <span className="block w-5 h-[1.5px] bg-gray-900 rounded-full"></span>
+            <span className="block w-5 h-[1.5px] bg-gray-900 rounded-full"></span>
+            <span className="block w-5 h-[1.5px] bg-gray-900 rounded-full"></span>
           </div>
         </button>
       </div>
 
-      {/* MOBILE MENU */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
-          <nav className="flex flex-col items-center py-6 gap-6 text-sm">
+        <div className="md:hidden fixed top-20 left-0 w-full h-[calc(100vh-5rem)] bg-white backdrop-blur-xl z-50">
+          <nav className="px-6 py-8 flex flex-col gap-6">
             {navItems.map((item) => (
               <Link
                 key={item}
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="text-gray-700 hover:text-gray-900 transition"
+                className="text-base font-medium text-gray-700 hover:text-black transition"
               >
                 {item}
               </Link>
             ))}
 
-            <button className="mt-4 bg-gray-900 text-white px-6 py-2 rounded-md text-sm hover:bg-gray-800 transition">
-              Let’s Talk →
+            <button className="mt-4 h-12 rounded-xl bg-black text-white text-sm font-medium">
+              Let&apos;s Talk
             </button>
           </nav>
         </div>

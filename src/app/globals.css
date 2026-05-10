@@ -38,3 +38,7 @@ body {
   animation: fadeIn 0.6s ease-out both;
 }
 
+.container-x {
+  @apply max-w-7xl mx-auto px-6 lg:px-12;
+}
+
