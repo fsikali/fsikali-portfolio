@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative overflow-hidden pt-24 md:pt-32 pb-20">
 
       {/* BACKGROUND GRID */}
-      <div className="absolute inset-0 -z-10 opacity-[0.02] [background-image:linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] [background-size:40px_40px]" />
+      <div className="absolute inset-0 -z-10 opacity-[0.02] bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-size-[40px_40px]" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
@@ -49,7 +49,8 @@ export default function Hero() {
               I build fast, scalable digital products with clean architecture,
               strong performance, and modern UX.
             </p>
-
+            
+            {/*
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-8">
               <button className="h-11 px-6 rounded-md bg-black text-white text-sm font-medium">
                 View Projects
@@ -59,6 +60,7 @@ export default function Hero() {
                 Contact Me
               </button>
             </div>
+            */}
 
             <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-8">
               {["Next.js", "Spring Boot", "PostgreSQL", "TypeScript"].map(

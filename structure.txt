@@ -1,328 +1,131 @@
-.
-├── eslint.config.mjs
-├── next.config.ts
-├── next-env.d.ts
-├── node_modules
-│   ├── acorn
-│   ├── acorn-jsx
-│   ├── ajv
-│   ├── @alloc
-│   ├── ansi-styles
-│   ├── argparse
-│   ├── aria-query
-│   ├── array-buffer-byte-length
-│   ├── arraybuffer.prototype.slice
-│   ├── array-includes
-│   ├── array.prototype.findlast
-│   ├── array.prototype.findlastindex
-│   ├── array.prototype.flat
-│   ├── array.prototype.flatmap
-│   ├── array.prototype.tosorted
-│   ├── ast-types-flow
-│   ├── async-function
-│   ├── available-typed-arrays
-│   ├── axe-core
-│   ├── axobject-query
-│   ├── @babel
-│   ├── babel-plugin-react-compiler
-│   ├── balanced-match
-│   ├── baseline-browser-mapping
-│   ├── brace-expansion
-│   ├── braces
-│   ├── browserslist
-│   ├── call-bind
-│   ├── call-bind-apply-helpers
-│   ├── call-bound
-│   ├── callsites
-│   ├── caniuse-lite
-│   ├── chalk
-│   ├── client-only
-│   ├── color-convert
-│   ├── color-name
-│   ├── @commitlint
-│   ├── concat-map
-│   ├── convert-source-map
-│   ├── cross-spawn
-│   ├── csstype
-│   ├── damerau-levenshtein
-│   ├── data-view-buffer
-│   ├── data-view-byte-length
-│   ├── data-view-byte-offset
-│   ├── debug
-│   ├── deep-is
-│   ├── define-data-property
-│   ├── define-properties
-│   ├── detect-libc
-│   ├── doctrine
-│   ├── dunder-proto
-│   ├── electron-to-chromium
-│   ├── @emnapi
-│   ├── emoji-regex
-│   ├── enhanced-resolve
-│   ├── es-abstract
-│   ├── escalade
-│   ├── escape-string-regexp
-│   ├── es-define-property
-│   ├── es-errors
-│   ├── es-iterator-helpers
-│   ├── @eslint
-│   ├── eslint
-│   ├── @eslint-community
-│   ├── eslint-config-next
-│   ├── eslint-import-resolver-node
-│   ├── eslint-import-resolver-typescript
-│   ├── eslint-module-utils
-│   ├── eslint-plugin-import
-│   ├── eslint-plugin-jsx-a11y
-│   ├── eslint-plugin-react
-│   ├── eslint-plugin-react-hooks
-│   ├── eslint-scope
-│   ├── eslint-visitor-keys
-│   ├── es-object-atoms
-│   ├── espree
-│   ├── esquery
-│   ├── esrecurse
-│   ├── es-set-tostringtag
-│   ├── es-shim-unscopables
-│   ├── es-to-primitive
-│   ├── estraverse
-│   ├── esutils
-│   ├── fast-deep-equal
-│   ├── fast-glob
-│   ├── fast-json-stable-stringify
-│   ├── fast-levenshtein
-│   ├── fastq
-│   ├── file-entry-cache
-│   ├── fill-range
-│   ├── find-up
-│   ├── flat-cache
-│   ├── flatted
-│   ├── for-each
-│   ├── function-bind
-│   ├── function.prototype.name
-│   ├── functions-have-names
-│   ├── generator-function
-│   ├── gensync
-│   ├── get-intrinsic
-│   ├── get-proto
-│   ├── get-symbol-description
-│   ├── get-tsconfig
-│   ├── globals
-│   ├── globalthis
-│   ├── glob-parent
-│   ├── gopd
-│   ├── graceful-fs
-│   ├── has-bigints
-│   ├── has-flag
-│   ├── hasown
-│   ├── has-property-descriptors
-│   ├── has-proto
-│   ├── has-symbols
-│   ├── has-tostringtag
-│   ├── hermes-estree
-│   ├── hermes-parser
-│   ├── @humanfs
-│   ├── @humanwhocodes
-│   ├── ignore
-│   ├── @img
-│   ├── import-fresh
-│   ├── imurmurhash
-│   ├── internal-slot
-│   ├── isarray
-│   ├── is-array-buffer
-│   ├── is-async-function
-│   ├── is-bigint
-│   ├── is-boolean-object
-│   ├── is-bun-module
-│   ├── is-callable
-│   ├── is-core-module
-│   ├── is-data-view
-│   ├── is-date-object
-│   ├── isexe
-│   ├── is-extglob
-│   ├── is-finalizationregistry
-│   ├── is-generator-function
-│   ├── is-glob
-│   ├── is-map
-│   ├── is-negative-zero
-│   ├── is-number
-│   ├── is-number-object
-│   ├── is-regex
-│   ├── is-set
-│   ├── is-shared-array-buffer
-│   ├── is-string
-│   ├── is-symbol
-│   ├── is-typed-array
-│   ├── is-weakmap
-│   ├── is-weakref
-│   ├── is-weakset
-│   ├── iterator.prototype
-│   ├── jiti
-│   ├── @jridgewell
-│   ├── jsesc
-│   ├── json5
-│   ├── json-buffer
-│   ├── json-schema-traverse
-│   ├── json-stable-stringify-without-jsonify
-│   ├── js-tokens
-│   ├── jsx-ast-utils
-│   ├── js-yaml
-│   ├── keyv
-│   ├── language-subtag-registry
-│   ├── language-tags
-│   ├── levn
-│   ├── lightningcss
-│   ├── lightningcss-linux-x64-gnu
-│   ├── lightningcss-linux-x64-musl
-│   ├── locate-path
-│   ├── lodash.merge
-│   ├── loose-envify
-│   ├── lru-cache
-│   ├── lucide-react
-│   ├── magic-string
-│   ├── math-intrinsics
-│   ├── merge2
-│   ├── micromatch
-│   ├── minimatch
-│   ├── minimist
-│   ├── ms
-│   ├── nanoid
-│   ├── napi-postinstall
-│   ├── @napi-rs
-│   ├── natural-compare
-│   ├── @next
-│   ├── next
-│   ├── node-exports-info
-│   ├── @nodelib
-│   ├── node-releases
-│   ├── @nolyfill
-│   ├── object-assign
-│   ├── object.assign
-│   ├── object.entries
-│   ├── object.fromentries
-│   ├── object.groupby
-│   ├── object-inspect
-│   ├── object-keys
-│   ├── object.values
-│   ├── optionator
-│   ├── own-keys
-│   ├── parent-module
-│   ├── path-exists
-│   ├── path-key
-│   ├── path-parse
-│   ├── picocolors
-│   ├── picomatch
-│   ├── p-limit
-│   ├── p-locate
-│   ├── possible-typed-array-names
-│   ├── postcss
-│   ├── prelude-ls
-│   ├── prop-types
-│   ├── punycode
-│   ├── queue-microtask
-│   ├── react
-│   ├── react-dom
-│   ├── react-is
-│   ├── reflect.getprototypeof
-│   ├── regexp.prototype.flags
-│   ├── resolve
-│   ├── resolve-from
-│   ├── resolve-pkg-maps
-│   ├── reusify
-│   ├── @rtsao
-│   ├── run-parallel
-│   ├── safe-array-concat
-│   ├── safe-push-apply
-│   ├── safe-regex-test
-│   ├── scheduler
-│   ├── semver
-│   ├── set-function-length
-│   ├── set-function-name
-│   ├── set-proto
-│   ├── sharp
-│   ├── shebang-command
-│   ├── shebang-regex
-│   ├── side-channel
-│   ├── side-channel-list
-│   ├── side-channel-map
-│   ├── side-channel-weakmap
-│   ├── @simple-libs
-│   ├── source-map-js
-│   ├── stable-hash
-│   ├── stop-iteration-iterator
-│   ├── string.prototype.includes
-│   ├── string.prototype.matchall
-│   ├── string.prototype.repeat
-│   ├── string.prototype.trim
-│   ├── string.prototype.trimend
-│   ├── string.prototype.trimstart
-│   ├── strip-bom
-│   ├── strip-json-comments
-│   ├── styled-jsx
-│   ├── supports-color
-│   ├── supports-preserve-symlinks-flag
-│   ├── @swc
-│   ├── @tailwindcss
-│   ├── tailwindcss
-│   ├── tapable
-│   ├── tinyglobby
-│   ├── to-regex-range
-│   ├── ts-api-utils
-│   ├── tsconfig-paths
-│   ├── tslib
-│   ├── @tybys
-│   ├── type-check
-│   ├── typed-array-buffer
-│   ├── typed-array-byte-length
-│   ├── typed-array-byte-offset
-│   ├── typed-array-length
-│   ├── @types
-│   ├── typescript
-│   ├── @typescript-eslint
-│   ├── typescript-eslint
-│   ├── unbox-primitive
-│   ├── undici-types
-│   ├── @unrs
-│   ├── unrs-resolver
-│   ├── update-browserslist-db
-│   ├── uri-js
-│   ├── which
-│   ├── which-boxed-primitive
-│   ├── which-builtin-type
-│   ├── which-collection
-│   ├── which-typed-array
-│   ├── word-wrap
-│   ├── yallist
-│   ├── yocto-queue
-│   ├── zod
-│   └── zod-validation-error
-├── package.json
-├── package-lock.json
-├── pnpm-lock.yaml
-├── pnpm-workspace.yaml
-├── postcss.config.mjs
-├── public
-│   ├── file.svg
-│   ├── globe.svg
-│   ├── images
-│   ├── next.svg
-│   ├── vercel.svg
-│   └── window.svg
-├── README.md
-├── src
-│   ├── app
-│   ├── components
-│   ├── config
-│   ├── data
-│   ├── hooks
-│   ├── lib
-│   ├── providers
-│   ├── services
-│   ├── store
-│   ├── styles
-│   ├── types
-│   └── validators
-├── structure.txt
-└── tsconfig.json
+src
+├── app
+│   ├── api
+│   │   ├── analytics
+│   │   │   └── route.ts
+│   │   ├── contact
+│   │   │   └── route.ts
+│   │   └── newsletter
+│   │       └── route.ts
+│   ├── (dashboard)
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── error.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── (legal)
+│   │   ├── privacy-policy
+│   │   │   └── page.tsx
+│   │   └── terms
+│   │       └── page.tsx
+│   ├── loading.tsx
+│   ├── not-found.tsx
+│   ├── page.tsx
+│   ├── (portfolio)
+│   │   ├── about
+│   │   │   └── page.tsx
+│   │   ├── blog
+│   │   │   ├── category
+│   │   │   │   └── [slug]
+│   │   │   │       └── page.tsx
+│   │   │   ├── page.tsx
+│   │   │   └── [slug]
+│   │   │       └── page.tsx
+│   │   ├── brand
+│   │   │   └── page.tsx
+│   │   ├── contact
+│   │   │   └── page.tsx
+│   │   ├── experience
+│   │   │   └── page.tsx
+│   │   ├── faq
+│   │   │   └── page.tsx
+│   │   ├── pricing
+│   │   │   └── page.tsx
+│   │   ├── projects
+│   │   │   ├── page.tsx
+│   │   │   └── [slug]
+│   │   │       └── page.tsx
+│   │   ├── resume
+│   │   │   └── page.tsx
+│   │   ├── skills
+│   │   │   └── page.tsx
+│   │   └── testimonials
+│   │       └── page.tsx
+│   ├── robots.ts
+│   └── sitemap.ts
+├── components
+│   ├── icons.ts
+│   ├── layout
+│   │   ├── Container.tsx
+│   │   ├── Footer.tsx
+│   │   └── Navbar.tsx
+│   ├── sections
+│   │   ├── About
+│   │   │   ├── AboutHero.tsx
+│   │   │   ├── Experience.tsx
+│   │   │   ├── Skills.tsx
+│   │   │   └── Tools.tsx
+│   │   ├── Brand
+│   │   │   ├── BrandInfo.tsx
+│   │   │   └── Brand.tsx
+│   │   ├── Conctact
+│   │   │   ├── ContactForm.tsx
+│   │   │   └── ContactInfo.tsx
+│   │   ├── Experience
+│   │   │   └── Experience.tsx
+│   │   ├── Home
+│   │   │   ├── CTA.tsx
+│   │   │   ├── FeaturedProjects.tsx
+│   │   │   ├── Hero.tsx
+│   │   │   └── SkillsPreview.tsx
+│   │   ├── Projects
+│   │   │   ├── ProjectCard.tsx
+│   │   │   ├── ProjectDetails.tsx
+│   │   │   ├── ProjectList.tsx
+│   │   │   └── ProjectsGrid.tsx
+│   │   └── Skills
+│   │       └── SkillDetails.tsx
+│   ├── seo
+│   │   └── MetaTags.tsx
+│   └── ui
+│       ├── Badge.tsx
+│       ├── Button.tsx
+│       ├── Card.tsx
+│       ├── Input.tsx
+│       ├── Modal.tsx
+│       └── Spinner.tsx
+├── config
+│   └── site.ts
+├── data
+│   ├── projects.ts
+│   ├── services.ts
+│   ├── skills.ts
+│   └── testimonials.ts
+├── hooks
+│   ├── useDebounce.ts
+│   ├── useScroll.ts
+│   └── useTheme.ts
+├── lib
+│   ├── constants.ts
+│   ├── markdown.ts
+│   ├── seo.ts
+│   └── utils.ts
+├── providers
+│   └── ThemeProvider.tsx
+├── services
+│   ├── blog.service.ts
+│   ├── email.service.ts
+│   └── projects.service.ts
+├── store
+│   └── useStore.ts
+├── styles
+│   └── animations.css
+├── types
+│   ├── blog.ts
+│   ├── index.ts
+│   └── project.ts
+└── validators
+    └── contact.schema.ts
 
-310 directories, 16 files
+48 directories, 81 files

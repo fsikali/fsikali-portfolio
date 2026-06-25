@@ -6,7 +6,14 @@ import { useState } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["Home", "Projects", "Skills", "Experience", "About", "Brand"];
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Projects", href: "/projects" },
+    { name: "Skills", href: "/skills" },
+    { name: "Experience", href: "/experience" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" }, 
+  ];
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 border-b border-gray-100 bg-white backdrop-blur-xl">
@@ -23,19 +30,25 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-10">
           {navItems.map((item) => (
             <Link
-              key={item}
-              href="#"
+              key={item.href}
+              href={item.href}
               className="text-sm font-medium text-gray-500 transition-colors duration-300 hover:text-gray-900"
             >
-              {item}
+              {item.name}
             </Link>
           ))}
         </nav>
 
         <div className="hidden md:flex items-center">
-          <button className="h-11 px-5 rounded-xl bg-black text-white text-sm font-medium transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]">
-            Download CV
-          </button>
+          <a 
+            href="/resume/cv.pdf"
+            //target="_blank"
+            //rel="noopener noreferrer" 
+            download="Flemming_Sikali_CV.pdf"
+            className="h-11 px-5 rounded-xl bg-black text-white text-sm font-medium flex items-center transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]"
+            > 
+              Download CV
+            </a>
         </div>
 
         <button
@@ -56,12 +69,12 @@ export default function Navbar() {
           <nav className="px-6 py-8 flex flex-col gap-6">
             {navItems.map((item) => (
               <Link
-                key={item}
-                href="#"
+                key={item.href}
+                href={item.href}
                 onClick={() => setIsOpen(false)}
                 className="text-base font-medium text-gray-700 hover:text-black transition"
               >
-                {item}
+                {item.name}
               </Link>
             ))}
 
@@ -71,6 +84,6 @@ export default function Navbar() {
           </nav>
         </div>
       )}
-    </header>
+    </header> 
   );
 }
