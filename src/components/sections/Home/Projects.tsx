@@ -2,7 +2,7 @@ import Link from "next/link";
 import { projects } from "@/data/projects";
 import { Icons } from "@/components/icons";
 
-export default function FeaturedProjects() {
+export default function Projects() {
   return (
     <section className="py-28">
 

@@ -17,7 +17,7 @@ export default function Hero() {
 
               {/* ❌ REMOVED GREEN GLOW DIV */}
 
-              <div className="relative w-[250px] h-[250px] rounded-full overflow-hidden border border-gray-200 bg-white">
+              <div className="relative w-62.5 h-62.5 rounded-full overflow-hidden border border-gray-200 bg-white">
 
                 <Image
                   src="/images/hero/image.webp"
@@ -83,7 +83,7 @@ export default function Hero() {
 
               {/* ❌ REMOVED GREEN GLOW DIV */}
 
-              <div className="relative w-[320px] h-[320px] lg:w-[340px] lg:h-[340px] rounded-full overflow-hidden border border-gray-200 bg-white">
+              <div className="relative w-[320px] h-80 lg:w-85 lg:h-85 rounded-full overflow-hidden border border-gray-200 bg-white">
 
                 <Image
                   src="/images/hero/image.webp"

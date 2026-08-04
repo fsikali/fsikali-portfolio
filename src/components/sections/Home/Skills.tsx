@@ -1,6 +1,6 @@
 import { Code2, Server, Layers, Sparkles } from "lucide-react";
 
-export default function SkillsPreview() {
+export default function Skills() {
   const skills = [
     {
       icon: Code2,

@@ -7,12 +7,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "Projects", href: "/projects" },
-    { name: "Skills", href: "/skills" },
-    { name: "Experience", href: "/experience" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" }, 
+    { name: "Home", href: "#home" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    { name: "Experience", href: "#experience" },
+    { name: "About", href: "#about" },
+    { name: "Contact", href: "#contact" }, 
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function Navbar() {
       {/* ALIGNMENT WRAPPER ADDED (ONLY CHANGE) */}
       <div className="max-w-7xl mx-auto h-20 px-6 lg:px-12 flex items-center justify-between">
 
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="#home" className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-sm font-semibold text-emerald-600">
             FS
           </div>
@@ -45,7 +45,7 @@ export default function Navbar() {
             //target="_blank"
             //rel="noopener noreferrer" 
             download="Flemming_Sikali_CV.pdf"
-            className="h-11 px-5 rounded-xl bg-black text-white text-sm font-medium flex items-center transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]"
+            className="h-11 px-5 rounded-xl bg-black text-white text-sm font-medium flex items-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]"
             > 
               Download CV
             </a>

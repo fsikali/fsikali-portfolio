@@ -3,10 +3,10 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-emerald-100/40 bg-[#fcfcfd]">
+    <footer id="contact"className="relative border-t border-emerald-100/40 bg-[#fcfcfd]">
 
       {/* top glow line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-gray-200 to-transparent" />
 
       {/* ALIGNMENT WRAPPER ADDED (ONLY CHANGE) */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
