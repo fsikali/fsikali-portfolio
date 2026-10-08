@@ -1,7 +1,9 @@
 import Hero from "@/components/sections/Home/Hero";
-import FeaturedProjects from "@/components/sections/Home/FeaturedProjects";
-import SkillsPreview from "@/components/sections/Home/SkillsPreview";
-import CTA from "@/components/sections/Home/CTA";
+import Projects from "@/components/sections/Home/Projects";
+import Skills from "@/components/sections/Home/Skills";
+import Services from "@/components/sections/Home/Services";
+import Experience from "@/components/sections/Home/Experience";
+import Process from "@/components/sections/Home/Process";
 
 export default function HomePage() {
   return (
@@ -9,9 +11,12 @@ export default function HomePage() {
       
       {/* HERO SECTION */}
       <Hero />
-      <FeaturedProjects />
-      <SkillsPreview />
-      <CTA />
+      <Projects />
+      <Skills />
+      <Services />
+      <Experience />
+      <Process />
+      
     </main>
   );
 }

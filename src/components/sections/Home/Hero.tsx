@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative container py-24 grid md:grid-cols-2 gap-12 items-center overflow-hidden">
+    <section className="relative container-a grid md:grid-cols-2 gap-12 items-center overflow-hidden my-5">
       
       {/* BACKGROUND GRID */}
       <div className="absolute inset-0 -z-10 opacity-[0.04] 
@@ -10,36 +10,43 @@ export default function Hero() {
         [background-size:40px_40px]" />
 
       {/* LEFT */}
-      <div className="animate-fadeIn">
+      <div className="animate-fadeIn"> 
 
-        {/* name */}
-        <h1 className="text-5xl font-bold leading-tight tracking-tight text-gray-900 relative inline-block">
-          Flemming Sikali
-          <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-emerald-500 origin-left animate-grow"></span>
-        </h1>
-
-        {/* role */}
-        <div className="mt-3 text-sm text-gray-600">
-          Software Engineer · Founder @ FSTechSpace
+        {/* Greet */} 
+        <div>
+          <button className="bg-emerald-100 px-5 py-2 rounded-full font-medium text-slate-900">
+            Hello, I'm
+          </button>
         </div>
 
-        {/* description */}
-        <p className="mt-5 text-gray-600 max-w-md leading-relaxed">
-          I build fast, scalable digital products with clean architecture, strong performance, and modern UX.
-        </p>
+        <div>
+          {/* name */}
+          <h1 className="mt-3 text-5xl font-bold leading-tight tracking-tight text-slate-900 relative inline-block">
+            Flemming Sikali
+            <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-emerald-500 origin-left animate-grow"></span>
+          </h1>
+
+          {/* role */}
+          <div className="mt-3 text-sm text-slate-900">
+            Software Engineer · Founder @ FSTechSpace
+          </div>
+
+          {/* description */}
+          <p className="mt-3 text-slate-900 max-w-md leading-relaxed">
+            I build digital products through a structured process, from requirements and planning to design, development, testing, deployment, and continuous improvement.
+          </p>
+        </div>
+        
 
         {/* CTA */}
         <div className="flex gap-4 mt-7">
-          <button className="bg-black text-white px-5 py-2 rounded-md hover:bg-gray-800 transition">
-            View Projects
-          </button>
-
-          <button className="bg-white border border-gray-200 px-5 py-2 rounded-md hover:bg-gray-50 transition">
-            Contact Me
+          <button className="cursor-pointer bg-emerald-400 text-slate-900 font-medium px-5 py-2 rounded-full hover:bg-emerald-300 transition">
+            Get in Touch
           </button>
         </div>
 
-        {/* tech stack */}
+        { 
+        /*
         <div className="flex flex-wrap gap-3 mt-7">
           {["Next.js", "Spring Boot", "PostgreSQL", "TypeScript"].map((tech) => (
             <span
@@ -50,17 +57,19 @@ export default function Hero() {
             </span>
           ))}
         </div>
+        */}
+
       </div>
 
       {/* RIGHT IMAGE */}
       <div className="flex justify-center">
-        <div className="w-[340px] h-[340px] rounded-full overflow-hidden border border-gray-200 bg-white">
+        <div className="w-[340px] h-[340px] rounded-full overflow-hidden border border-gray-200 bg-white ">
           <Image
             src="/images/hero/image.webp"
             alt="Hero Image"
             width={500}
             height={500}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full" 
           />
         </div>
       </div>

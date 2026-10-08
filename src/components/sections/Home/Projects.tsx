@@ -4,20 +4,20 @@ import { Icons } from "@/components/icons";
 
 export default function FeaturedProjects() {
   return (
-    <section className="container py-28">
-      
+    <section className="my-8 px-6">
+    <div className="container">  
       {/* HEADER */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-          Featured Projects
+        <h2 className="text-4xl font-bold tracking-tight text-slate-900">
+          Projects
         </h2>
 
-        <p className="mt-3 text-gray-500 text-sm max-w-md mx-auto">
+        <p className="mt-3 text-slate-900 text-sm max-w-md mx-auto">
           A selection of projects focused on performance, scalability, and clean UI systems.
         </p>
-      </div>
+      </div> 
 
-      {/* GRID */}
+       {/* GRID */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {projects.map((project, i) => (
@@ -41,13 +41,13 @@ export default function FeaturedProjects() {
             {/* TOP */}
             <div>
               <h3 className="
-                text-xl font-semibold text-gray-900
+                text-xl font-semibold text-slate-900
                 group-hover:text-emerald-700 transition
               ">
                 {project.title}
               </h3>
 
-              <p className="text-gray-600 text-sm mt-3 leading-relaxed min-h-[60px]">
+              <p className="text-slate-900 text-sm mt-3 leading-relaxed min-h-[60px]">
                 {project.description}
               </p>
             </div>
@@ -60,9 +60,9 @@ export default function FeaturedProjects() {
                   className="
                     text-xs font-medium
                     px-2.5 py-1 rounded-full
-                    bg-gray-50 text-gray-700
+                    bg-gray-50 text-slate-900
                     border border-gray-200
-                    group-hover:border-emerald-100
+                    group-hover:border-emerald-400
                     transition
                   "
                 >
@@ -110,6 +110,7 @@ export default function FeaturedProjects() {
         ))}
 
       </div>
+    </div>  
     </section>
   );
 }
