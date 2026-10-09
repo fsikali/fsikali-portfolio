@@ -82,7 +82,7 @@ export default function Navbar() {
             ))}
 
             <button className="mt-4 bg-gray-900 text-white px-6 py-2 rounded-md text-sm hover:bg-gray-800 transition">
-              Let’s Tal →
+              Let’s Talk →
             </button>
           </nav>
         </div>
