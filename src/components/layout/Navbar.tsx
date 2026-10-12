@@ -15,7 +15,7 @@ export default function Navbar() {
       
         {/* LEFT mx-auto my-6 max-w-7xl rounded-3xl px-6 py-20 */}
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-emerald-100 text-slate-900 rounded-full flex items-center justify-center font-bold">
+          <div className="w-8 h-8 text-slate-900 rounded-full flex items-center justify-center font-bold">
             FS
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function Navbar() {
           <a 
             href="/cv.pdf" 
             download
-            className="cursor-pointer inline-flex items-center gap-2 bg-emerald-100 text-slate-900 font-medium px-4 py-2 rounded-full hover:bg-emerald-300 transition"
+            className="cursor-pointer inline-flex items-center gap-2 text-slate-900 font-medium px-4 py-2 rounded-full hover:bg-emerald-300 transition"
           >
             Download CV
             <Download size={17} strokeWidth={2} />
