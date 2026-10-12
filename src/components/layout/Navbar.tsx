@@ -38,7 +38,7 @@ export default function Navbar() {
           <a 
             href="/cv.pdf" 
             download
-            className="cursor-pointer inline-flex items-center gap-2 bg-emerald-100 text-slate-900 font-medium px-4 py-2 rounded-full hover:bg-emerald-300 transition"
+            className="cursor-pointer inline-flex items-center gap-2 text-slate-900 font-medium px-4 py-2 rounded-full hover:bg-emerald-300 transition"
           >
             Download CV
             <Download size={17} strokeWidth={2} />
