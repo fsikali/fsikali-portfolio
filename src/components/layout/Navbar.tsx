@@ -15,7 +15,7 @@ export default function Navbar() {
       
         {/* LEFT mx-auto my-6 max-w-7xl rounded-3xl px-6 py-20 */}
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-emerald-100 text-slate-900 rounded-full flex items-center justify-center font-bold">
+          <div className="w-8 h-8 text-slate-900 rounded-full flex items-center justify-center font-bold">
             FS
           </div>
         </div>
