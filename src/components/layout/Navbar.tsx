@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 w-full bg-white border-b border-slate-200 z-50 px-6">
-      <div className="container-a h-16 flex items-center justify-between">
+      <div className="container-a h-16 flex items-center justify-between py-10">
       
         {/* LEFT mx-auto my-6 max-w-7xl rounded-3xl px-6 py-20 */}
         <div className="flex items-center gap-3">
@@ -41,7 +41,7 @@ export default function Navbar() {
             className="cursor-pointer inline-flex items-center gap-2 text-white bg-black border border-black font-medium text-lg px-4 py-2 rounded-full hover:bg-[#F1F3F4] hover:text-black transition"
           >
             Download CV
-            <Download size={17} strokeWidth={2} />
+            <Download size={20} strokeWidth={2.5} />
           </a>
         </div>
 

@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Image from "next/image"; 
+import {ArrowUpRight} from "lucide-react";
 
 export default function Hero() {
   return (
@@ -12,12 +13,13 @@ export default function Hero() {
       {/* LEFT */}
       <div className="animate-fadeIn"> 
 
-        {/* Greet */} 
+        {/* Greet 
         <div>
-          <button className="bg-emerald-100 px-5 py-2 rounded-full font-medium text-slate-900">
+          <button className="text-emerald-600 rounded-full font-medium text-3xl">
             Hello, I'm
           </button>
         </div>
+        */} 
 
         <div>
           {/* name */}
@@ -40,8 +42,9 @@ export default function Hero() {
 
         {/* CTA */}
         <div className="flex gap-4 mt-7">
-          <button className="cursor-pointer bg-emerald-400 text-slate-900 font-medium px-5 py-2 rounded-full hover:bg-emerald-300 transition">
-            Get in Touch
+          <button className="cursor-pointer inline-flex items-center gap-2 border border-black text-slate-900 font-medium px-5 py-2 rounded-full text-lg hover:bg-[#F1F3F4] transition">
+            Get in Touch 
+            <ArrowUpRight size={20} strokeWidth={2.5} className="text-black"/>
           </button>
         </div>
 
