@@ -1,8 +1,8 @@
 {
   "name": "fsikali-portfolio",
-  "version": "0.1.0", 
-  "packageManager": "pnpm@12.5.1",
-  "private": true, 
+  "version": "0.1.0",
+  "packageManager": "pnpm@12.11.2",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
