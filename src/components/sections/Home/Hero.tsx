@@ -5,11 +5,12 @@ export default function Hero() {
   return (
     <section className="relative container-a grid md:grid-cols-2 gap-12 items-center overflow-hidden my-5">
       
-      {/* BACKGROUND GRID */}
+      {/* BACKGROUND GRID 
       <div className="absolute inset-0 -z-10 opacity-[0.04] 
         [background-image:linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)]
         [background-size:40px_40px]" />
-
+      */}
+      
       {/* LEFT */}
       <div className="animate-fadeIn"> 
 
