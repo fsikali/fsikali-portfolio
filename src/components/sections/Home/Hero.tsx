@@ -10,7 +10,7 @@ export default function Hero() {
         [background-image:linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)]
         [background-size:40px_40px]" />
       */}
-      
+
       {/* LEFT */}
       <div className="animate-fadeIn"> 
 
@@ -26,11 +26,11 @@ export default function Hero() {
           {/* name */}
           <h1 className="mt-3 text-5xl font-bold leading-tight tracking-tight text-slate-900 relative inline-block">
             Flemming Sikali
-            <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-emerald-500 origin-left animate-grow"></span>
+            <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-emerald-600 origin-left animate-grow"></span>
           </h1>
 
           {/* role */}
-          <div className="mt-3 text-sm text-slate-900">
+          <div className="mt-3 text-sm text-emerald-700">
             Software Engineer · Founder @ FSTechSpace
           </div>
 
