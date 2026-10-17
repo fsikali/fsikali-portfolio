@@ -4,7 +4,7 @@ import { Icons } from "@/components/icons";
 
 export default function FeaturedProjects() {
   return (
-    <section className="my-8 px-6">
+    <section className="my-20 px-6">
       
       {/* HEADER */}
       <div className="text-center mb-16">

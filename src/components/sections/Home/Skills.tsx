@@ -168,11 +168,10 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="my-8 px-4 sm:px-6">
+    <section id="skills" className="px-4 sm:px-6">
       
         {/* HEADER */}
-        <div className="mb-12 text-center sm:mb-14">
-          <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-emerald-500" />
+        <div className="mb-12 text-center sm:mb-12">
 
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Skills
@@ -182,7 +181,7 @@ export default function Skills() {
             Technologies and tools I use to build digital products.
           </p>
         </div>
-        
+
         <div className="container mx-auto rounded-3xl bg-slate-100 px-5 py-16 sm:px-8 sm:py-20">
         {/* SKILLS GRID */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

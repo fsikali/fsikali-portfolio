@@ -1,9 +1,9 @@
 export default function Services() {
   return (
-    <section className="my-8 px-6">
+    <section className="my-18 px-6">
       
-        <h2 className="text-3xl font-semibold text-gray-900 text-center mb-8">Services</h2>
-        
+        <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">Services</h2>
+
         <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="service-card p-6 bg-white rounded shadow">
