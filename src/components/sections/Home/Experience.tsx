@@ -1,8 +1,8 @@
 export default function Experience() {
   return (
     <section className="my-8 px-6">
-      <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl font-bold text-slate-900 mb-8">Experience</h2>
+        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">Experience</h2>
+        <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Experience cards */}
           <div className="bg-white p-6 rounded-lg shadow-md">

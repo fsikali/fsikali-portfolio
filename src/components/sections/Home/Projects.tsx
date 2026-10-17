@@ -5,7 +5,7 @@ import { Icons } from "@/components/icons";
 export default function FeaturedProjects() {
   return (
     <section className="my-8 px-6">
-    <div className="container">  
+      
       {/* HEADER */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold tracking-tight text-slate-900">
@@ -16,7 +16,8 @@ export default function FeaturedProjects() {
           A selection of projects focused on performance, scalability, and clean UI systems.
         </p>
       </div> 
-
+      
+      <div className="container">
        {/* GRID */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         
