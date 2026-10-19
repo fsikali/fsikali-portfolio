@@ -5,7 +5,7 @@ export default function Experience() {
         <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Experience cards */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-2xl shadow-md">
             <h3 className="text-xl font-semibold text-slate-900 mb-2">Software Engineer</h3>
             <p className="text-slate-900 mb-4 font-medium">Company A | Jan 2020 - Present</p>
             <ul className="list-disc list-inside text-slate-900">
@@ -15,7 +15,7 @@ export default function Experience() {
             </ul>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-2xl shadow-md">
             <h3 className="text-xl font-semibold text-slate-900 mb-2">Frontend Developer</h3>
             <p className="text-slate-900 mb-4 font-medium">Company B | Jun 2018 - Dec 2019</p>
             <ul className="list-disc list-inside text-slate-900">
@@ -25,7 +25,7 @@ export default function Experience() {
             </ul>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-2xl shadow-md">
             <h3 className="text-xl font-semibold text-slate-900 mb-2">Intern</h3>
             <p className="text-slate-900 mb-4 font-medium">Company C | Jan 2017 - May 2018</p>
             <ul className="list-disc list-inside text-slate-900">

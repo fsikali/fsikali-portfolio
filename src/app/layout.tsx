@@ -23,10 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body 
-        className={`${roboto.variable} antialiased`}
+        className={`${roboto.variable} antialiased flex min-h-screen flex-col`}
       >
         <Navbar />
-        <main className="pt-20">{children}</main>
+        <main className="pt-20 flex-1">{children}</main>
         <Footer />
       </body>
     </html>

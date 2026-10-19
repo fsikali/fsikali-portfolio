@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-slate-50 my-8">
+    <footer className="bg-slate-50 mt-12">
       
       {/* top glow line
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
@@ -15,13 +15,13 @@ export default function Footer() {
           FSTechSpace
         </h2>
 
-        <p className="mt-2 text-sm text-slate-900 max-w-md">
+        <p className="mt-2 text-sm sm:text-base text-slate-900 max-w-md">
           Building fast, modern, and scalable digital experiences with precision and design clarity.
         </p>
 
         {/* socials */}
         <div className="flex gap-7 mt-7 items-center">
-
+          
           {/* GitHub */}
           <a
             href="https://github.com/"
@@ -65,8 +65,8 @@ export default function Footer() {
       </div>
 
       {/* bottom bar */}
-      <div className="border-t border-emerald-100/30">
-        <div className="container-a py-5 text-center text-xs text-slate-900">
+      <div className="border-t border-slate-200">
+        <div className="container-a py-3 text-center text-xs text-slate-900">
           © {new Date().getFullYear()} FSTechSpace · Built with Next.js & Tailwind
         </div>
       </div>

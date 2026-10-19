@@ -12,7 +12,7 @@ export default function FeaturedProjects() {
           Projects
         </h2>
 
-        <p className="mt-3 text-slate-900 text-sm max-w-md mx-auto">
+        <p className="mt-3 text-slate-900 text-sm sm:text-base max-w-md mx-auto">
           A selection of projects focused on performance, scalability, and clean UI systems.
         </p>
       </div> 
@@ -53,42 +53,8 @@ export default function FeaturedProjects() {
               </p>
             </div>
 
-            {/* TECH STACK */}
-            <div className="flex flex-wrap gap-2 mt-5">
-              {project.tech.map((tech) => (
-                <span
-                  key={tech}
-                  className="
-                    text-xs font-medium
-                    px-2.5 py-1 rounded-full
-                    bg-gray-50 text-slate-900
-                    border border-gray-200
-                    group-hover:border-emerald-400
-                    transition
-                  "
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-
             {/* ACTIONS */}
             <div className="mt-auto pt-6 flex items-center justify-between">
-
-              {/* GitHub */}
-              <Link
-                href={project.github}
-                target="_blank"
-                className="
-                  inline-flex items-center gap-2
-                  text-sm text-gray-600
-                  hover:text-emerald-700
-                  transition
-                "
-              >
-                <Icons.github size={16} />
-                Code
-              </Link>
 
               {/* Live (if exists) */}
               {project.live && (

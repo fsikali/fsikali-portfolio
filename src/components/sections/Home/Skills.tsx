@@ -177,12 +177,12 @@ export default function Skills() {
             Skills
           </h2>
 
-          <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-600 sm:text-base">
+          <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-900 sm:text-base">
             Technologies and tools I use to build digital products.
           </p>
         </div>
 
-        <div className="container mx-auto rounded-3xl bg-slate-100 px-5 py-16 sm:px-8 sm:py-20">
+        <div className="container mx-auto rounded-2xl bg-slate-100 px-5 py-16 sm:px-8 sm:py-20">
         {/* SKILLS GRID */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {skills.map((skill) => {
@@ -191,7 +191,7 @@ export default function Skills() {
             return (
               <div
                 key={skill.name}
-                className="group flex min-w-0 items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 transition-all duration-200 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-md"
+                className="group flex min-w-0 items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 transition-all duration-200 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-md"
               >
                 {/* TECHNOLOGY ICON */}
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-slate-50 transition-colors group-hover:bg-emerald-50">
@@ -207,7 +207,7 @@ export default function Skills() {
                     {skill.name}
                   </h3>
 
-                  <p className="mt-1 text-xs leading-5 text-slate-500 sm:text-sm">
+                  <p className="mt-1 text-xs leading-5 text-slate-900 sm:text-sm">
                     {skill.category}
                   </p>
                 </div>
