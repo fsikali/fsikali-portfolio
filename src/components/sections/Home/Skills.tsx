@@ -55,19 +55,22 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiExpress,
-  SiMongodb,
   SiPostgresql,
-  SiHtml5,
-  SiCss,
   SiTailwindcss,
-  SiBootstrap,
   SiGit,
   SiDocker,
-  SiJest,
-  SiCypress,
 } from "react-icons/si";
 
+import {FaJava, FaLeaf} from "react-icons/fa";
+
 const skills = [
+  // Programming Languages
+  {
+    name: "Java",
+    category: "Programming Language",
+    icon: FaJava,
+    color: "text-red-600",
+  },
   {
     name: "JavaScript",
     category: "Programming Language",
@@ -79,7 +82,7 @@ const skills = [
     category: "Programming Language",
     icon: SiTypescript,
     color: "text-blue-600",
-  },
+  }, 
   {
     name: "React",
     category: "Frontend Library",
@@ -87,15 +90,9 @@ const skills = [
     color: "text-sky-500",
   },
   {
-    name: "Next.js",
-    category: "React Framework",
-    icon: SiNextdotjs,
-    color: "text-slate-900",
-  },
-  {
-    name: "Node.js",
-    category: "Runtime Environment",
-    icon: SiNodedotjs,
+    name: "Spring",
+    category: "Java Framework",
+    icon: FaLeaf,
     color: "text-green-600",
   },
   {
@@ -103,30 +100,12 @@ const skills = [
     category: "Web Framework",
     icon: SiExpress,
     color: "text-slate-700",
-  },
+  }, 
   {
-    name: "MongoDB",
-    category: "NoSQL Database",
-    icon: SiMongodb,
-    color: "text-green-600",
-  },
-  {
-    name: "PostgreSQL",
-    category: "Relational Database",
-    icon: SiPostgresql,
-    color: "text-blue-700",
-  },
-  {
-    name: "HTML5",
-    category: "Markup Language",
-    icon: SiHtml5,
-    color: "text-orange-600",
-  },
-  {
-    name: "CSS3",
-    category: "Styling Language",
-    icon: SiCss,
-    color: "text-blue-600",
+    name: "Next.js",
+    category: "React Framework",
+    icon: SiNextdotjs,
+    color: "text-slate-900",
   },
   {
     name: "Tailwind CSS",
@@ -134,11 +113,19 @@ const skills = [
     icon: SiTailwindcss,
     color: "text-cyan-500",
   },
+
+  // Frameworks and Libraries
   {
-    name: "Bootstrap",
-    category: "CSS Framework",
-    icon: SiBootstrap,
-    color: "text-purple-600",
+    name: "Node.js",
+    category: "Runtime Environment",
+    icon: SiNodedotjs,
+    color: "text-green-600",
+  },
+  {
+    name: "PostgreSQL",
+    category: "Relational Database",
+    icon: SiPostgresql,
+    color: "text-blue-700",
   },
   {
     name: "Git",
@@ -151,18 +138,6 @@ const skills = [
     category: "Containerization",
     icon: SiDocker,
     color: "text-blue-500",
-  },
-  {
-    name: "Jest",
-    category: "Testing Framework",
-    icon: SiJest,
-    color: "text-rose-600",
-  },
-  {
-    name: "Cypress",
-    category: "End-to-End Testing",
-    icon: SiCypress,
-    color: "text-slate-700",
   },
 ];
 
