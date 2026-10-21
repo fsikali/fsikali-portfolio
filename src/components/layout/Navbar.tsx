@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["Home", "Projects", "Skills", "Services", "Process", "About"];
+  const navItems = ["Home", "Projects", "Skills", "Services","Experience", "Process"];
 
   return (
     <header className="fixed top-0 w-full bg-white border-b border-slate-200 z-50 px-6">
@@ -25,7 +25,7 @@ export default function Navbar() {
           {navItems.map((item) => (
             <Link
               key={item}
-              href="#"
+              href={`#${item.toLowerCase()}`}
               className="text-slate-900 font-medium text-lg hover:text-slate-600 transition"
             >
               {item}

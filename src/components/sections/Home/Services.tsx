@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section className="my-18 px-6">
+    <section className="my-18 px-6 scroll-mt-24" id="services">
       
         <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">Services</h2>
 

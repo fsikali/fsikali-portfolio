@@ -143,7 +143,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="px-4 sm:px-6">
+    <section className="px-4 sm:px-6 scroll-mt-24" id="skills">
       
         {/* HEADER */}
         <div className="mb-12 text-center sm:mb-12">

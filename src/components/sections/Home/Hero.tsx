@@ -3,7 +3,7 @@ import {ArrowUpRight} from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative container-a grid md:grid-cols-2 gap-12 items-center overflow-hidden my-5">
+    <section className="relative container-a grid md:grid-cols-2 gap-12 items-center overflow-hidden my-5 scroll-mt-24" id="home">
       
       {/* BACKGROUND GRID 
       <div className="absolute inset-0 -z-10 opacity-[0.04] 

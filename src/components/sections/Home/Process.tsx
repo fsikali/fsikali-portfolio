@@ -1,6 +1,6 @@
 export default function Process() {
   return (
-    <section className="my-16 px-6">
+    <section className="my-16 px-6 scroll-mt-24" id="process">
         <h2 className="text-3xl font-bold text-center mb-12">Process</h2>
         <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
