@@ -23,9 +23,9 @@ export const projects: Project[] = [
   },
   {
     id: "dashboard",
-    title: "Analytics Dashboard",
+    title: "Booking System",
     description:
-      "Data analytics dashboard visualizing real-time metrics through API-driven backend architecture",
+      "Scalable booking system with real-time availability, user authentication, and admin dashboard",
   },
   {
     id: "live-news-feed",
