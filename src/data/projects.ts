@@ -46,3 +46,4 @@ export const projects: Project[] = [
       "Real-time chat system built with Spring Boot WebSocket scalable architecture messaging",
   },
 ];
+
