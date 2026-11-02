@@ -17,8 +17,8 @@ export default function Services() {
           </div>
           
           <div className="service-card p-6 bg-white rounded-2xl shadow">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Backend Development</h3>
-            <p className="text-slate-900">Designing and implementing scalable backend systems and APIs for robust applications.</p>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Graphic & 3D Design</h3>
+            <p className="text-slate-900">Creating visually stunning graphics and 3D models for various media and applications.</p>
           </div>
         </div>
       </div>

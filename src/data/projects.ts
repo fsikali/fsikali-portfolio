@@ -8,22 +8,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "skincare-store",
-    title: "Skincare Store",
-    description:
-      "Full-stack ecommerce platform for skincare products with cart and checkout system",
-    featured: true,
-  },
-  {
-    id: "portfolio",
-    title: "Developer Portfolio",
+    id: "fs-portfolio",
+    title: "Personal Portfolio",
     description:
       "Modern portfolio built with Next.js App Router, SEO optimization, and reusable components.",
     featured: true,
   },
   {
-    id: "dashboard",
-    title: "Booking System",
+    id: "fs-store",
+    title: "E-commerce Store",
+    description:
+      "Scalable e-commerce store built with Next.js, featuring product catalog, shopping cart, and checkout system.",
+    featured: true,
+  },
+  {
+    id: "restaurant-booking-system",
+    title: "Restaurant Booking System",
     description:
       "Scalable booking system with real-time availability, user authentication, and admin dashboard",
   },
