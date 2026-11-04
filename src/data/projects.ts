@@ -34,10 +34,10 @@ export const projects: Project[] = [
       "Real-time news feed system delivering continuously updated content with scalable architecture",
   },
   {
-    id: "fstechspace-framework",
-    title: "Mini Framework",
+    id: "analytics-dashboard",
+    title: "Analytics Dashboard",
     description:
-      "Lightweight backend framework built with Node.js for scalable server architecture design",
+      "Comprehensive analytics dashboard for visualizing and interpreting data sets with interactive charts and graphs",
   },
   {
     id: "chat-app",
