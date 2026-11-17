@@ -28,3 +28,4 @@ export default function ProjectCard({ title, description, tags }: Props) {
     </div>
   );
 }
+
